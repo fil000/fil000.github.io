@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Render dimensioni corrette su dispositivi mobili -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Filippo Patrian</title>
+  <style>
+    /* Stile generale */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #000;    /* Sfondo nero stile terminale */
+      color: #39ff14;           /* Testo verde brillante */
+      font-family: monospace;   /* Font a larghezza fissa */
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    a {
+      color: #39ff14;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    /* Contenitore principale */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    /* Sezioni con bordo "terminale" */
+    section {
+      border: 1px solid #39ff14;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    /* Riga terminale */
+    .terminal-line {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .prompt {
+      color: #00b300; /* Verde leggermente diverso per il prompt */
+    }
+    .command {
+      color: #ffffff; /* Comando digitato in bianco */
+    }
+    /* Cursore lampeggiante */
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      background-color: #39ff14;
+      margin-left: 2px;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%   { opacity: 1; }
+      50%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    /* Tabella competenze */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #39ff14;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #005500;
+    }
+    /* Responsività: font più piccolo su schermi stretti, scroll orizzontale per la tabella */
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+      section {
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+	 .ascii-art {
+      white-space: pre; /* Mantiene la formattazione dell'ASCII art */
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+	 <section>
+		<div class="ascii-art">
+		====================================================================
+			  B E N V E N U T O   N E L   M I O   C U R R I C U L U M 
+		--------------------------------------------------------------------
+		[INFO] Ultimo aggiornamento del CV: 12/01/2025
+		[INFO] Principali competenze: System and Network administration
+		[INFO] Esperienza: 5+ anni nel settore IT
+		--------------------------------------------------------------------
+				  Buona navigazione e grazie per la visita!
+		====================================================================
+		 </div>
+	</section>
+	
+    <!-- Sezione Introduttiva -->
+    <section>
+      <h1>Filippo Patrian</h1>
+      <h2>System Administrator | DevOps Engineer</h2>
+      <p>
+        Email: <a href="mailto:filippopatrian@gmail.com">filippopatrian@gmail.com</a> <br>
+        LinkedIn: <a href="https://www.linkedin.com/in/filippopatrian" target="_blank">www.linkedin.com/in/filippopatrian</a>
+      </p>
+    </section>
+
+    <!-- Sezione "Chi sono" -->
+    <section>
+      <h2>Chi sono</h2>
+      <p>
+        Sono un appassionato di tecnologia con esperienza pluriennale nella gestione di sistemi Linux e Windows,
+        automazione.
+        Amo sperimentare e risolvere problemi complessi in ambienti enterprise e cloud.
+      </p>
+    </section>
+
+    <!-- Competenze -->
+    <section>
+      <h2>Competenze</h2>
+      <table>
+        <tr>
+          <th>Tecnologia</th>
+          <th>Livello</th>
+        </tr>
+        <tr>
+          <td>Linux (RHEL, Debian, Ubuntu)</td>
+          <td>Esperto</td>
+        </tr>
+        <tr>
+          <td>Windows Server</td>
+          <td>Avanzato</td>
+        </tr>
+        <tr>
+          <td>Cloud (AWS, Azure)</td>
+          <td>Intermedio</td>
+        </tr>
+        <tr>
+          <td>Networking (TCP/IP, firewall, VPN)</td>
+          <td>Avanzato</td>
+        </tr>
+		<tr>
+          <td>Ansible/Puppet/Chef</td>
+          <td>Base</td>
+        </tr>
+        <tr>
+          <td>Docker/Kubernetes</td>
+          <td>Base</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Esperienze Lavorative -->
+    <section>
+      <h2>Esperienze Lavorative</h2>
+      <p>
+        <strong>SysAdmin @ Gavia Systems SRL</strong> (2019 - Presente)
+      </p>
+      <ul>
+        <li>
+          <strong>Database &amp; High Availability</strong>
+          <ul>
+            <li>Installazione, gestione e troubleshooting di database MySQL 8 in configurazione Master-Master (GTID), garantendo alta disponibilità, ridondanza e failover.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Scripting &amp; Automazione</strong>
+          <ul>
+            <li>Sviluppo di script in Python per l’automazione di processi ripetitivi (ad es. backup, provisioning, analisi log) e per l’integrazione di servizi (monitoraggi custom in Icinga2, integrazione con API).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Virtualizzazione &amp; Disaster Recovery</strong>
+          <ul>
+            <li>Progettazione, installazione e gestione di infrastrutture basate su VMware ESXi.</li>
+            <li>Implementazione di backup, repliche e piani di Disaster Recovery con Veeam, assicurando la continuità di servizio in caso di guasti.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Monitoraggio &amp; Osservabilità</strong>
+          <ul>
+            <li>Configurazione di Icinga2 e Grafana per il monitoraggio proattivo di server, apparati di rete e applicazioni.</li>
+            <li>Creazione di check personalizzati (es. via Redfish per iDRAC Dell) e configurazione di alert basati sulle latenze HTTP per un troubleshooting tempestivo.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Networking &amp; Sicurezza</strong>
+          <ul>
+            <li>Configurazione di switch e firewall su diversi siti a livello nazionale, includendo VLAN, VPN e regole di sicurezza.</li>
+            <li>Manutenzione di infrastrutture di rete con attenzione a segmentazione, NAT, e gestione delle policy di sicurezza.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Servizi di Streaming</strong>
+          <ul>
+            <li>Realizzazione di una piattaforma di streaming audio mediante Liquidsoap e Python, con oltre 400+ TB di traffico annuo per un’importante azienda del settore.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Migrazioni &amp; Cloud</strong>
+          <ul>
+            <li>Analisi, pianificazione e migrazione di caselle email e servizi a Microsoft 365, incluse procedure IMAP, integrazioni con API Google Workspace e Tenant-to-Tenant.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Amministrazione di Server</strong>
+          <ul>
+            <li>Linux (CentOS, Red Hat): Gestione di Apache, Tomcat (in configurazione multi-nodo bilanciati da mod_jk con supporto HTTPS).</li>
+            <li>Windows Server (2019 e successivi): Configurazione e manutenzione di Active Directory, DNS, DHCP, File Server, DFS e relative policy.</li>
+          </ul>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- Formazione -->
+    <section>
+      <h2>Formazione</h2>
+      <p>
+        <strong>IIS Polo Tecnico Adria </strong> - High School Diploma, IT & Telecommunications <br>
+      </p>
+      <p>
+        <strong></strong> 
+      </p>
+    </section>
+
+    <!-- Contatti -->
+    <section>
+      <h2>Contatti</h2>
+      <p>
+        <em>Sentiti libero di contattarmi per collaborazioni, consulenze o semplicemente per fare networking!</em>
+      </p>
+    </section>
+
+    <!-- Prompt finale -->
+    <div class="terminal-line">
+      <span class="prompt">[fpatrian@server01 ~]$</span>
+      <span class="command" id="typewriter"></span><span class="cursor"></span>
+    </div>
+  </div>
+
+  <!-- Script per effetto "digitato" (opzionale) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const text = 'echo "Grazie per aver visitato il mio CV!"';
+      const promptEl = document.getElementById('typewriter');
+      let index = 0;
+
+      function typeWriter() {
+        if (index < text.length) {
+          promptEl.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, 60); // regola la velocità di digitazione
+        }
+      }
+      typeWriter();
+    });
+  </script>
+</body>
+</html>
